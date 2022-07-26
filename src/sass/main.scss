@@ -5,5 +5,76 @@
 
 
 body{
-    background-color: $dark-blue-main ;
+    background-color: $dark-blue-main;
 }
+.button{
+    font-family: 'Raleway', sans-serif;
+    border:none;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(45deg, hsla(176, 68%, 64%, 1) 0%, hsla(198, 60%, 50%, 1) 57%);
+    padding: 1rem 7rem;
+    border-radius: 2rem;
+}
+.header{
+    background-color:  $dark-blue-intro;
+
+   
+}
+.main{
+    background-color: $dark-blue-main;
+}
+.navi{
+    &__list{
+        width: 80%;
+        list-style-type: none;
+    }
+    &__link{
+
+        text-decoration: none;
+        color:#fff;
+    }
+}
+.cta-card{
+   &__box{
+    background-color:  $dark-blue-intro;
+    background-image: url(../img/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: 100% 100%;
+
+
+    
+   }
+   &__img{
+      width: 80%;
+}
+
+    &__heading{
+        
+        font-weight: 700;
+        font-size: 2rem;
+        width: 80%;
+    }
+    &__text{
+
+    }
+}
+
+@media (min-width:576px){
+
+}   
+
+@media (min-width:768px){
+    .navi{
+        &__list{
+            width: 50%;
+            list-style-type: none;
+        }
+        &__link{
+    
+            text-decoration: none;
+            color:#fff;
+        }
+    }
+}   
