@@ -112,13 +112,34 @@ body{
 }}
 
 
-@media  (min-width:1200px){
+@media  (min-width:992px){
 .cta-card{
     background-color:  $dark-blue-intro;
     background-image: url(../img/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
     background-size: 100% 50%;
     background-position: 100% 100%;
+}
+.feature{
+&__heading--grid{
+    align-self: end;
+}
+&__text-container{
+    align-self: start;
+}
+ 
+&__box {
+    &--grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr );
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
+
+}
+&__img--grid{
+    grid-row: 1/4;
+}
 }
 }
 }
