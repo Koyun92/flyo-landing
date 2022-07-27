@@ -6,6 +6,7 @@
 
 body{
     background-color: $dark-blue-main;
+    overflow-x: hidden;
 }
 .button{
     font-family: 'Raleway', sans-serif;
@@ -26,7 +27,7 @@ body{
 }
 .navi{
     &__list{
-        width: 80%;
+        width: 100%;
         list-style-type: none;
     }
     &__link{
